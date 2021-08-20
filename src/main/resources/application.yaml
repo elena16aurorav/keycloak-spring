@@ -1,0 +1,18 @@
+server:
+  port : 8081
+
+keycloak:
+  realm: myrealm
+  auth-server-url: http://localhost:8080/auth
+  resource: myclient
+  credentials:
+    secret: ""
+
+keycloak-authz-server:
+  user:
+    user1:
+      login: myuser
+      password: ivie2Aisho
+
+jwt:
+  lifetime: 5
